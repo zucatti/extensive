@@ -1,0 +1,86 @@
+.ux-flag-de {
+    background-image: url(../images/flags/de.png) ! important;
+} .ux-flag-at {
+    background-image: url(../images/flags/at.png) ! important;
+} .ux-flag-ch {
+    background-image: url(../images/flags/ch.png) ! important;
+} .ux-flag-lu {
+    background-image: url(../images/flags/lu.png) ! important;
+} .ux-flag-li {
+    background-image: url(../images/flags/li.png) ! important;
+} .ux-icon-combo-icon {
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    width: 18px;
+    height: 14px;
+}
+
+/* X-BROWSER-WARNING: this is not being honored by Safari */ .ux-icon-combo-input {
+    padding-left: 25px;
+} .x-form-field-wrap .ux-icon-combo-icon {
+    top: 3px;
+    left: 5px;
+} .ux-icon-combo-item {
+    background-repeat: no-repeat ! important;
+    background-position: 3px 50% ! important;
+    padding-left: 24px ! important;
+} .x-form-field-wrap .x-form-ellipsis-trigger {
+    background-image: url(../images/default/form/ellipsis-trigger.gif);
+    cursor: pointer;
+} .ux-mselect {
+    overflow: auto;
+    background: white;
+    position: relative; /* for calculating scroll offsets */
+    zoom: 1;
+    overflow: auto;
+} .ux-mselect-item {
+    font: normal 12px tahoma, arial, helvetica, sans-serif;
+    padding: 2px;
+    border: 1px solid #fff;
+    white-space: nowrap;
+    cursor: pointer;
+} .ux-mselect-selected {
+    border: 1px dotted #a3bae9 !important;
+    background: #DFE8F6;
+    cursor: pointer;
+} .x-view-drag-insert-above {
+    border-top: 1px dotted #3366cc;
+} .x-view-drag-insert-below {
+    border-bottom: 1px dotted #3366cc;
+}
+
+.ux-button-arrow-left {
+    background-image: url(../images/ext/left2.gif) ! important;
+	width: 16px;
+	height: 16px;
+}
+
+.ux-button-arrow-right {
+    background-image: url(../images/ext/right2.gif) ! important;
+	width: 16px;
+	height: 16px;
+}
+
+.ux-button-arrow-bottom {
+    background-image: url(../images/ext/bottom2.gif) ! important;
+	width: 16px;
+	height: 16px;
+}
+
+.ux-button-arrow-up {
+    background-image: url(../images/ext/up2.gif) ! important;
+	width: 16px;
+	height: 16px;
+}
+
+.ux-button-arrow-top {
+    background-image: url(../images/ext/top2.gif) ! important;
+	width: 16px;
+	height: 16px;
+}
+
+.ux-button-arrow-down {
+    background-image: url(../images/ext/down2.gif) ! important;
+	width: 16px;
+	height: 16px;
+}

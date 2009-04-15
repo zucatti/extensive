@@ -1,0 +1,1 @@
+java -cp rhino/js.jar org.mozilla.javascript.tools.shell.Main scripts/extreme.js
