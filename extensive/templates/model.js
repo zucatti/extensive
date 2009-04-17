@@ -1,17 +1,9 @@
-/**
- * @author schiesser
- */
-Ext.ns('efiport.login');
+Ext.ns('{widgetNameSpace}.model');
 
-efiport.login.model = function(widget){
+{widgetNameSpace}.model.{modelName} = function(widget){
     var that = {};
 	
-    that.authPartner = new Ext.data.Store({
-        reader: new Ext.data.XmlReader({
-            record: 'return'
-        }, ['addressCity', 'addressStreet', 'addressZipCode',
-		'email','firstName','lastName','goid'])
-    });
+	// TODO add your stores here
 	
     return that;
 };
