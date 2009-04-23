@@ -31,13 +31,13 @@ Extreme.components.MultiSelectWindow = Ext.extend(Ext.Window, {
             closable: false,
             items: that.selector,
             buttons: [{
-                text: 'Ok',
+                text: '<span class="arrow">OK</span>',
                 handler: function(){
                     that.fireEvent('ok');
                     that.hide();
                 }
             }, {
-                text: 'Abbrechen',
+                text: '<span class="arrow">Abbrechen</span>',
                 handler: function(){
                     that.hide();
                 }
