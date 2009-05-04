@@ -4,9 +4,9 @@
  *
  * @author schiesser
  */
-Ext.ns('Extreme.util.ViewHelper');
+Ext.ns('Extensive.util.ViewHelper');
 
-Extreme.util.ViewHelper = function(){
+Extensive.util.ViewHelper = function(){
 	// private helpers
 	var getViewObject = function(element, objectName) {
 		if(element[objectName] === undefined) {

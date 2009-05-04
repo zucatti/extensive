@@ -1,9 +1,9 @@
 /**
  * @author schiesser
  */
-Ext.ns('Extreme.util');
+Ext.ns('Extensive.util');
 
-Extreme.util.TemplateLoader = function(){
+Extensive.util.TemplateLoader = function(){
 	var that = {};
 	
 	var map = {};

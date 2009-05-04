@@ -11,14 +11,14 @@ Ext.ns('{widgetNameSpace}');
         that.model.app = {widgetNameSpace}.model.app(that);
     	that.controller.app = {widgetNameSpace}.controller.app(that);
 
-        Extreme.util.ViewHelper.setViewFactory(that, function(viewClass){
+        Extensive.util.ViewHelper.setViewFactory(that, function(viewClass){
             return viewClass(that);
         });
 		// TODO add view classes here
-        Extreme.util.ViewHelper.setViewClasses(that, []);
+        Extensive.util.ViewHelper.setViewClasses(that, []);
         
 		// TODO set initial view here
-        Extreme.util.ViewHelper.setView(that, undefined);
+        Extensive.util.ViewHelper.setView(that, undefined);
     }
     
 });

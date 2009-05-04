@@ -1,9 +1,9 @@
 /**
  * @author schiesser
  */
-Ext.ns('Extreme.components');
+Ext.ns('Extensive.components');
 
-Extreme.components.PhoneField = Ext.extend(Ext.Panel, {
+Extensive.components.PhoneField = Ext.extend(Ext.Panel, {
     constructor: function(config){
     
 		var numberField = new Ext.form.TextField({
@@ -15,7 +15,7 @@ Extreme.components.PhoneField = Ext.extend(Ext.Panel, {
 					blankText: config.blankText
                 });
 				
-        Extreme.components.CountryCombo.superclass.constructor.call(this, Ext.apply({
+        Extensive.components.CountryCombo.superclass.constructor.call(this, Ext.apply({
             layout: 'column',
             border: false,
             isFormField: true,
@@ -45,4 +45,4 @@ Extreme.components.PhoneField = Ext.extend(Ext.Panel, {
         }, config));
     }
 });
-Ext.reg('phonefield', Extreme.components.PhoneField);
+Ext.reg('phonefield', Extensive.components.PhoneField);

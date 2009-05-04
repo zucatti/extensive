@@ -1,17 +1,25 @@
 /**
  * @author schiesser
  */
-Ext.ns('Extreme.components');
+Ext.ns('Extensive.components');
 
-Extreme.components.Breadcrumb = Ext.extend(Ext.form.Label, {
+Extensive.components.Breadcrumb = Ext.extend(Ext.form.Label, {
     initComponent: function(){
         var that = this;
-        Extreme.util.ViewHelper.on('change', function(){
-            var viewNames = Extreme.util.ViewHelper.getViewNames(that.elementToTrack);
+        Extensive.util.ViewHelper.on('change', function(){
+            var viewNames = Extensive.util.ViewHelper.getViewNames(that.elementToTrack);
             viewNames = viewNames.filter(function(element){
                 return element !== undefined;
             });
-            that.setText(viewNames.join(' » '));
+			var result = "";
+			viewNames.forEach(function(viewName, index) {
+				if (index < viewNames.length-1) {
+					result += viewName + ' » ';
+				} else {
+					result += '<span class="extensive-viewHighlight">' + viewName + '</span>';
+				}
+			});
+			that.setText(result, false);
         });
     }
 });

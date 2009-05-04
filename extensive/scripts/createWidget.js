@@ -8,4 +8,4 @@ var saveString = function(string, fileName) {
 };
 
 saveString('Hello', 'hello.txt');
-print('Extreme is loaded.');
+print('Extensive is loaded.');

@@ -1,16 +1,16 @@
 /**
  * @author schiesser
  */
-Ext.ns('Extreme.components');
+Ext.ns('Extensive.components');
 
-Extreme.components.ViewNavigation = Ext.extend(Ext.Panel, {
+Extensive.components.ViewNavigation = Ext.extend(Ext.Panel, {
     initComponent: function(){
         var that = this;
         that.addButton('Zurück', function(){
-            Extreme.util.ViewHelper.previousView(that.elementToTrack);
+            Extensive.util.ViewHelper.previousView(that.elementToTrack);
         });
         that.addButton('Weiter', function(){
-            Extreme.util.ViewHelper.setNextView(that.elementToTrack);
+            Extensive.util.ViewHelper.setNextView(that.elementToTrack);
         });
     }
 });

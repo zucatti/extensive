@@ -1,9 +1,9 @@
 /**
  * @author schiesser
  */
-Ext.ns('Extreme.components');
+Ext.ns('Extensive.components');
 
-Extreme.components.MultiSelectWindow = Ext.extend(Ext.Window, {
+Extensive.components.MultiSelectWindow = Ext.extend(Ext.Window, {
     constructor: function(config){
     
         var that = this;
@@ -15,7 +15,7 @@ Extreme.components.MultiSelectWindow = Ext.extend(Ext.Window, {
             msHeight: 200,
             valueField: config.valueField,
             displayField: config.displayField,
-            imagePath: "../lib/extreme/images/ext",
+            imagePath: "../lib/extensive/images/ext",
             toLegend: config.toLegend,
             fromLegend: config.fromLegend,
             fromStore: config.store,
@@ -27,7 +27,7 @@ Extreme.components.MultiSelectWindow = Ext.extend(Ext.Window, {
             }]
         });
         
-        Extreme.components.MultiSelect.superclass.constructor.call(this, Ext.apply({
+        Extensive.components.MultiSelect.superclass.constructor.call(this, Ext.apply({
             closable: false,
             items: that.selector,
             buttons: [{
@@ -48,18 +48,18 @@ Extreme.components.MultiSelectWindow = Ext.extend(Ext.Window, {
     }
 });
 
-Extreme.components.MultiSelect = Ext.extend(Ext.form.TriggerField, {
+Extensive.components.MultiSelect = Ext.extend(Ext.form.TriggerField, {
     constructor: function(config){
     
         var that = this;
         
-        var window = new Extreme.components.MultiSelectWindow(config);
+        var window = new Extensive.components.MultiSelectWindow(config);
 
         that.getResultStore = function(){
             return window.selector.toStore;
         };
         
-        Extreme.components.MultiSelect.superclass.constructor.call(this, Ext.apply({
+        Extensive.components.MultiSelect.superclass.constructor.call(this, Ext.apply({
             onTriggerClick: function(){
 				if (!that.storeLoaded && config.mode !== 'local') {
 					config.store.load();
@@ -94,4 +94,4 @@ Extreme.components.MultiSelect = Ext.extend(Ext.form.TriggerField, {
         return result;
     }
 });
-Ext.reg('singleLineMultiSelect', Extreme.components.MultiSelect);
+Ext.reg('singleLineMultiSelect', Extensive.components.MultiSelect);
