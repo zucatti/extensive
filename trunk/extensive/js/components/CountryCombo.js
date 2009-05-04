@@ -23,7 +23,8 @@ Extreme.components.CountryCombo = Ext.extend(Ext.form.ComboBox, {
             displayField: 'countryName',
             iconClsField: 'countryFlag',
             triggerAction: 'all',
-            mode: 'local'
+            mode: 'local',
+			editable: false
         }, config));
     }
 });
