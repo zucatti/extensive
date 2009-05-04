@@ -4,11 +4,11 @@
  * 
  * @author schiesser
  */
-Ext.ns('Extreme.util');
+Ext.ns('Extensive.util');
 
 Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure;
 
-Extreme.util.ErrorHandler = function() {
+Extensive.util.ErrorHandler = function() {
 	var that = {};
 	
 	that.getServerFault = function(response) {
@@ -29,7 +29,7 @@ Ext.data.Connection.prototype.exceptionHandler = function(errorText) {
 };
 
 Ext.data.Connection.prototype.handleFailure = function(response, e) {
-	var errorText = Extreme.util.ErrorHandler.getServerFault(response);
+	var errorText = Extensive.util.ErrorHandler.getServerFault(response);
 	this.exceptionHandler(errorText);
 	Ext.data.Connection.prototype._handleFailure.call(this, response, e);
 };

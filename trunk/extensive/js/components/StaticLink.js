@@ -1,9 +1,9 @@
 /**
  * @author schiesser
  */
-Ext.ns('Extreme.components');
+Ext.ns('Extensive.components');
 
-Extreme.components.createStaticLink = function(label, href) {
+Extensive.components.createStaticLink = function(label, href) {
 	return new Ext.BoxComponent({
 		autoEl: {
 			tag: 'a',

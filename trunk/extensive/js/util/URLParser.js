@@ -2,9 +2,9 @@
  * URL parser from http://www.netlobo.com/url_query_string_javascript.html
  * @author schiesser
  */
-Ext.ns('Extreme.util.URLParser');
+Ext.ns('Extensive.util.URLParser');
 
-Extreme.util.URLParser.parse = function(name, phpCompatibility){
+Extensive.util.URLParser.parse = function(name, phpCompatibility){
     name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
     var regexS = "[\\?&]" + name + "=([^&#]*)";
     var regex = new RegExp(regexS);
