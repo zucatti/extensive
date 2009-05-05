@@ -8,7 +8,10 @@ Extensive.components.ViewName = Ext.extend(Ext.form.Label, {
         var that = this;
         Extensive.util.ViewHelper.on('change', function(){
             var viewNames = Extensive.util.ViewHelper.getViewNames(that.elementToTrack);
-            that.setText(viewNames.pop());
+			var viewName = viewNames.pop();
+			if (viewName !== undefined) {
+				that.setText(viewName);
+			}
         });
     }
 });
