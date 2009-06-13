@@ -8,6 +8,7 @@ Extensive.grid.ItemDeleter = Ext.extend(Ext.grid.RowSelectionModel, {
     width: 30,
     
     sortable: false,
+	dataIndex: 0, // this is needed, otherwise there will be an error
     
     menuDisabled: true,
     fixed: true,
@@ -25,6 +26,6 @@ Extensive.grid.ItemDeleter = Ext.extend(Ext.grid.RowSelectionModel, {
     },
     
     renderer: function(v, p, record, rowIndex){
-        return '<div class="remove" style="width: 15px; height: 16px;"></div>';
+        return '<div class="extensive-remove" style="width: 15px; height: 16px;"></div>';
     }
 });

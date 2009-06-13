@@ -2,6 +2,10 @@
 	font-weight: bold;
 }
 
+.extensive-remove {
+	background-image: url(../images/default/remove.gif) ! important;
+}
+
 .ux-flag-de {
     background-image: url(../images/flags/de.png) ! important;
 } .ux-flag-at {

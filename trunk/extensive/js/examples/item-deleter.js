@@ -10,10 +10,6 @@ Ext.onReady(function(){
         name: 'lastName'
     }]);
     
-	// the proxy to get the data from
-	// for 'real' applications this should be included in another file
-	// that way it's possible to exchange between mockup and real data 
-	// by simple exchaning a script include
     var peopleProxy = new Ext.data.MemoryProxy({
         root: [{
             firstName: 'Homer',
@@ -29,6 +25,8 @@ Ext.onReady(function(){
     });
     people.load();
     
+	var itemDeleter = new Extensive.grid.ItemDeleter();
+
     var grid = new Ext.grid.GridPanel({
         store: people,
         cm: new Ext.grid.ColumnModel([new Ext.grid.RowNumberer(), {
