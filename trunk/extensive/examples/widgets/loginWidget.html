@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+        <link rel="stylesheet" type="text/css" href="http://extjs.cachefly.net/ext-2.2/resources/css/ext-all.css" />
+        <link rel="stylesheet" type="text/css" href="css/extensive.css" />
+		<style type="text/css">
+			html, body {
+				margin: 40px;
+				font-family: Arial, sans-serif;
+				font-size: 18px;
+			}
+			h1 {
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
+			p {
+				margin: 10px 0px 10px 0px;
+			}
+		</style>
+        <script type="text/javascript" src="../../lib/ext-base.js">
+        </script>
+        <script type="text/javascript" src="http://extjs.cachefly.net/ext-2.2/ext-all.js">
+        </script>
+        <script type="text/javascript" src="../../js/util/ErrorHandler.js">
+        </script>
+        <script type="text/javascript" src="../../js/util/Formatter.js">
+        </script>
+        <script type="text/javascript" src="../../js/util/Validators.js">
+        </script>
+        <script type="text/javascript" src="../../js/util/SimpleAjax.js">
+        </script>
+        <script type="text/javascript" src="../../js/util/ViewHelper.js">
+        </script>
+        <script type="text/javascript" src="../../js/util/URLParser.js">
+        </script>
+        <script type="text/javascript" src="../../js/util/TemplateLoader.js">
+        </script>
+        <script type="text/javascript" src="../../js/components/PasswordField.js">
+        </script>
+        <script type="text/javascript" src="../../js/components/Breadcrumb.js">
+        </script>
+        <script type="text/javascript" src="../../js/components/StaticLink.js">
+        </script>
+        <script type="text/javascript" src="../../js/components/IconCombo.js">
+        </script>
+        <script type="text/javascript" src="../../js/components/CountryCombo.js">
+        </script>
+        <script type="text/javascript" src="../../js/components/PhoneField.js">
+        </script>
+        <script type="text/javascript" src="../../js/components/ViewName.js">
+        </script>
+        <script type="text/javascript" src="../../js/grid/ItemDeleter.js">
+        </script>
+        <script type="text/javascript" src="login/model/app.js">
+        </script>
+        <script type="text/javascript" src="login/controller/LoginController.js">
+        </script>
+        <script type="text/javascript" src="login/view/LoginView.js">
+        </script>
+        <script type="text/javascript" src="login/view/RegisterView.js">
+        </script>
+        <script type="text/javascript" src="login/widget.js">
+        </script>
+       <script type="text/javascript">
+            Ext.onReady(function() {
+			    Ext.QuickTips.init();
+    			// turn on validation errors beside the field globally
+  				Ext.form.Field.prototype.msgTarget = 'under';
+                var login = new Extensive.examples.login.Widget({
+					border: false,
+                    renderTo: Ext.fly("entry")
+                });
+                login.on('authenticated', function(){
+                    Ext.Msg.alert('Yes...', 'I am authenticated...');
+                });
+            });
+        </script>
+        <title></title>
+    </head>
+    <body>
+    	<h1>Login Widget example</h1>
+		<p>This is a most simple example of a widget generated with the extensive framework. It contains two different views, a <code>LoginView</code> and a <code>RegisterView</code>. Both are set using the <code>setView</code> method of the widget.</p>
+		<p>After pressing the 'Login' button, the credentials are delegated to the <code>LoginController</code>. This controller verifies the credentials and if they are valid an <code>athenticated</code> event is fired by the widget.</p>
+		<p>If the 'Register' button is pressed, the <code>LoginController</code> stores the email in the application model and the <code>RegisterView</code> retrieves it from there.</p>
+        <div id="entry">
+        </div>
+    </body>
+</html>
