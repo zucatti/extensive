@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf8">
-        <link rel="stylesheet" type="text/css" href="http://extjs.cachefly.net/ext-2.2/resources/css/ext-all.css" />
+        <link rel="stylesheet" type="text/css" href="../../lib/ext/resources/css/ext-all.css" />
         <link rel="stylesheet" type="text/css" href="css/extensive.css" />
 		<style type="text/css">
 			html, body {
@@ -13,14 +13,15 @@
 			h1 {
 				font-size: 24px;
 				margin-bottom: 20px;
+				border-bottom: 1px solid;
 			}
 			p {
 				margin: 10px 0px 10px 0px;
 			}
 		</style>
-        <script type="text/javascript" src="../../lib/ext-base.js">
+        <script type="text/javascript" src="../../lib/ext/adapter/ext/ext-base.js">
         </script>
-        <script type="text/javascript" src="http://extjs.cachefly.net/ext-2.2/ext-all.js">
+        <script type="text/javascript" src="../../lib/ext/ext-all-debug.js">
         </script>
         <script type="text/javascript" src="../../js/util/ErrorHandler.js">
         </script>
@@ -81,7 +82,7 @@
     <body>
     	<h1>Login Widget example</h1>
 		<p>This is a most simple example of a widget generated with the extensive framework. It contains two different views, a <code>LoginView</code> and a <code>RegisterView</code>. Both are set using the <code>setView</code> method of the widget.</p>
-		<p>After pressing the 'Login' button, the credentials are delegated to the <code>LoginController</code>. This controller verifies the credentials and if they are valid an <code>athenticated</code> event is fired by the widget.</p>
+		<p>After pressing the 'Login' button, the credentials are delegated to the <code>LoginController</code>. This controller verifies the credentials (try <code>homer@simpsons.com</code>,<code>duff</code>) and if they are valid an <code>authenticated</code> event is fired by the widget.</p>
 		<p>If the 'Register' button is pressed, the <code>LoginController</code> stores the email in the application model and the <code>RegisterView</code> retrieves it from there.</p>
         <div id="entry">
         </div>
